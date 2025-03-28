@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Montserrat', 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+hr{
+    border: none;
+    border-top: 1px solid #CDCDCD;
+}
+
+.modal {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgb(0,0,0,0.2);
+    width: 370px;
+    margin: 0 15px;
+    padding: 20px;
+    position: relative;
+    top: 85px;
+}
+
+.page-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fixed-header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+.scrollable-pages {
+    overflow-y: auto;
+    max-height: 200px;
+    scrollbar-width: none; /* firefox browser */
+    -ms-overflow-style: none; /* MS Edge browser */
+}
+
+.scrollable-pages::-webkit-scrollbar {
+    display: none; /* chrome browser */
+}
+
+.page-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+.page-label {
+    color: #1F2128;
+    font-size: 15px;
+}
+
+.custom-checkbox {
+    position: relative;
+    width: 23px;
+    height: 23px;
+    border: 2px solid #CDCDCD;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.custom-checkbox.checked {
+    background-color: #5087F8;
+    border-color: #5087F8;
+}
+
+.custom-checkbox.checked::after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 1px;
+    width: 7px;
+    height: 16px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.done-button {
+    background-color:#FFCE22;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    padding: 12px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.done-button:hover {
+    background-color: #FFD84D;
+}
+
+.checkbox-input {
+    display: none;
+}

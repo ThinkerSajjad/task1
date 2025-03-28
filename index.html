@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Selection Modal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="modal">
+        <div class="page-list">
+            <div class="fixed-header">
+                <div class="page-item">
+                    <label class="page-label">All pages</label>
+                    <input type="checkbox" id="all-pages" class="checkbox-input">
+                    <div class="custom-checkbox" onclick="toggleAll()"></div>
+                </div>
+                <hr>
+            </div>
+            
+            <div class="scrollable-pages">
+                <div class="page-item">
+                    <label class="page-label">Page 1</label>
+                    <input type="checkbox" id="page-1" class="checkbox-input" checked>
+                    <div class="custom-checkbox" onclick="toggleCheckbox('page-1')"></div>
+                </div>
+                
+                <div class="page-item">
+                    <label class="page-label">Page 2</label>
+                    <input type="checkbox" id="page-2" class="checkbox-input">
+                    <div class="custom-checkbox" onclick="toggleCheckbox('page-2')"></div>
+                </div>
+                
+                <div class="page-item">
+                    <label class="page-label">Page 3</label>
+                    <input type="checkbox" id="page-3" class="checkbox-input">
+                    <div class="custom-checkbox" onclick="toggleCheckbox('page-3')"></div>
+                </div>
+                
+                <div class="page-item">
+                    <label class="page-label">Page 4</label>
+                    <input type="checkbox" id="page-4" class="checkbox-input">
+                    <div class="custom-checkbox" onclick="toggleCheckbox('page-4')"></div>
+                </div>
+                
+                <div class="page-item">
+                    <label class="page-label">Page 5</label>
+                    <input type="checkbox" id="page-5" class="checkbox-input">
+                    <div class="custom-checkbox" onclick="toggleCheckbox('page-5')"></div>
+                </div>
+                
+                <div class="page-item">
+                    <label class="page-label">Page 6</label>
+                    <input type="checkbox" id="page-6" class="checkbox-input">
+                    <div class="custom-checkbox" onclick="toggleCheckbox('page-6')"></div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        
+        <button class="done-button">Done</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
